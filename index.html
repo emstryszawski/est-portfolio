@@ -42,7 +42,7 @@
         <button class="resume-button">RESUME</button>
     </div>
 </header>
-<div class="flex-row justified end p-rl-1">
+<div class="flex-row stretched end p-rl-1">
     <aside class="sticky-2">
         <div class="flex center">
             <a class="resume-button m-1" href="https://github.com/emstryszawski" target="_blank">
@@ -54,7 +54,7 @@
             <hr class="vertical-separator">
         </div>
     </aside>
-    <main class="p-rl-1">
+    <main class="flex stretched p-rl-1">
         <section id="welcome">
             <div>
                 <h3 class="accent raleway-accent">Hi, my name is</h3>
@@ -76,40 +76,54 @@
                 <h3><strong class="accent">I.</strong> About Me</h3>
                 <div class="horizontal"></div>
             </header>
-            <article id="resume">
-                <h2>My Short Resume</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea
-                    commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla
-                    pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est
-                    laborum.</p>
-            </article>
-            <div>
-                <div>
-                    <ul>
-                        <li><img src="/img/spring-boot-icon.svg" alt="Spring Boot icon">Spring Boot</li>
-                        <li><img src="/img/java-icon.svg" alt="Java icon">Java</li>
-                        <li><img src="/img/angular-icon.svg" alt="Angular icon">Angular</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><img src="/img/html-icon.svg" alt="HTML icon">HTML</li>
-                        <li><img src="/img/css-icon.svg" alt="CSS icon">CSS</li>
-                        <li><img src="/img/javascript-icon.svg" alt="JavaScript icon">JavaScript</li>
-                    </ul>
+            <div class="flex">
+                <article id="resume">
+                    <h2>So, who am I?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex
+                        ea
+                        commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id
+                        est
+                        laborum.</p>
+                </article>
+                <ul class="flex-row around">
+                    <li>
+                        <ul class="flex gap-1">
+                            <li><img src="/img/spring-boot-icon.svg" alt="Spring Boot icon">Spring Boot</li>
+                            <li><img src="/img/java-icon.svg" alt="Java icon">Java</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="flex gap-1">
+                            <li><img src="/img/html-icon.svg" alt="HTML icon">HTML</li>
+                            <li><img src="/img/css-icon.svg" alt="CSS icon">CSS</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="flex gap-1">
+                            <li><img src="/img/angular-icon.svg" alt="Angular icon">Angular</li>
+                            <li><img src="/img/javascript-icon.svg" alt="JavaScript icon">JavaScript</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="flex center p-tb-2">
+                    <a href="#experience"><span>Check My Projects</span></a>
+                    <a href="#experience"><img src="/img/double-chevron-down-icon.svg" alt="Scroll down"></a>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="experience">
             <header>
                 <h3>Where I've worked</h3>
                 <div></div>
