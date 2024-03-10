@@ -2,204 +2,236 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.svg">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.svg">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
-  <script src="js/app.js"></script>
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#fafafa">
+    <script src="js/app.js"></script>
 </head>
 
 <body onload="init()">
-<header class="flex-row stretched">
-  <div>
-    <img class="img-64" src="/img/logo.png" alt="My Bitmoji">
-  </div>
-  <div class="flex-row stretched">
-    <nav>
-      <ul class="flex-row">
-        <li><a href="">ABOUT</a></li>
-        <li><a href="">EXPERIENCE</a></li>
-        <li><a href="">PROJECTS</a></li>
-        <li><a href="">CONTACT</a></li>
-      </ul>
-    </nav>
-    <button class="resume-button">RESUME</button>
-  </div>
+<header class="flex-row center stretched p-rl-1 p-tb-1">
+    <a href=""><img class="img-64 img-accent-border" src="/img/logo.png" alt="My Bitmoji"></a>
+    <div class="flex-row center stretched">
+        <nav>
+            <ul class="flex-row">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="">EXPERIENCE</a></li>
+                <li><a href="">PROJECTS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="resume-button">RESUME</button>
+    </div>
 </header>
-<aside>
-  <div>
-    <a href="https://github.com/emstryszawski" target="_blank">
-      <img src="/img/github-icon.svg" alt="Github icon">
-    </a>
-    <a href="https://www.linkedin.com/in/emil-stryszawski/" target="_blank">
-      <img src="/img/linkedin-icon.svg" alt="LinkedIn icon">
-    </a>
-  </div>
-</aside>
-<section>
-  <div>
-    <h3 class="accent raleway-accent">Hi my name is</h3>
-    <h1>EMIL STRYSZAWSKI</h1>
-    <h2>Crafting tailored web apps</h2>
-    <p>Welcome to my portfolio! I'm a full-stack software engineer specializing in Java and Angular,
-      currently immersed in the dynamic world of financial technology at <strong><a href="">BEC</a></strong>.</p>
-  </div>
-  <button>GET TO KNOW ME</button>
-</section>
-<section>
-  <header>
-    <h3>About Me</h3>
+<div class="flex-row justified end p-rl-1">
+    <aside class="sticky-2">
+        <div class="flex center">
+            <a class="resume-button m-1" href="https://github.com/emstryszawski" target="_blank">
+                <img src="/img/github-icon.svg" alt="Github icon">
+            </a>
+            <a class="resume-button m-1" href="https://www.linkedin.com/in/emil-stryszawski/" target="_blank">
+                <img src="/img/linkedin-icon.svg" alt="LinkedIn icon">
+            </a>
+            <hr class="vertical-separator">
+        </div>
+    </aside>
+    <main class="p-rl-1">
+        <section id="welcome">
+            <div>
+                <h3 class="accent raleway-accent">Hi, my name is</h3>
+                <h1>EMIL STRYSZAWSKI</h1>
+                <h2>I'm crafting tailored web apps.</h2>
+                <p>Welcome to my portfolio! I'm a full-stack software engineer specializing in Java and Angular,
+                    currently immersed in the dynamic world of financial technology at <strong><a
+                            href="">BEC</a></strong>.
+                </p>
+            </div>
+            <div class="flex center p-tb-2">
+                <a href="#about"><span>Get To Know Me</span></a>
+                <a href="#about"><img src="/img/double-chevron-down-icon.svg" alt="Scroll down"></a>
+            </div>
+        </section>
+
+        <section id="about">
+            <header class="flex-row center">
+                <h3><strong class="accent">I.</strong> About Me</h3>
+                <div class="horizontal"></div>
+            </header>
+            <article id="resume">
+                <h2>My Short Resume</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla
+                    pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum.</p>
+            </article>
+            <div>
+                <div>
+                    <ul>
+                        <li><img src="/img/spring-boot-icon.svg" alt="Spring Boot icon">Spring Boot</li>
+                        <li><img src="/img/java-icon.svg" alt="Java icon">Java</li>
+                        <li><img src="/img/angular-icon.svg" alt="Angular icon">Angular</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><img src="/img/html-icon.svg" alt="HTML icon">HTML</li>
+                        <li><img src="/img/css-icon.svg" alt="CSS icon">CSS</li>
+                        <li><img src="/img/javascript-icon.svg" alt="JavaScript icon">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h3>Where I've worked</h3>
+                <div></div>
+            </header>
+            <div>
+                <fieldset id="jobs">
+                    <legend></legend>
+                    <div>
+                        <label for="bec">BEC</label>
+                        <input name="company" id="bec" type="radio" value="bec" checked onclick="showJobDescription()">
+                    </div>
+                    <div>
+                        <label for="neoSmart">NeoSmart</label>
+                        <input name="company" id="neoSmart" type="radio" value="neoSmart"
+                               onclick="showJobDescription()">
+                    </div>
+                </fieldset>
+                <div>
+                    <h3 id="jobTitle"></h3>
+                    <span id="jobTimeSpan"></span>
+                    <p id="jobDescription"></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h3>What I've done</h3>
+                <div></div>
+            </header>
+            <div>
+                <article>
+                    <div>
+                        <img class="img-512" src="/img/projects/spotify.png" alt="Spotify featured project">
+                    </div>
+                    <div>
+                        <h5>Featured project</h5>
+                        <h4>Portfolio</h4>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                                ut
+                                labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi
+                                ut
+                                aliquip ex
+                                ea commodo consequat.</p>
+                        </div>
+                        <div>
+                            <p>Java TypeScript PostgreSQL GitHub-Actions Kubernetes</p>
+                        </div>
+                        <div>
+                            <a href="https://github.com/emstryszawski/repositories" target="_blank"><img
+                                    src="/img/github-icon.svg"
+                                    alt="GitHub icon"></a>
+                            <a href="https://www.linkedin.com/in/emil-stryszawski/" target="_blank"><img
+                                    src="/img/linkedin-icon.svg"
+                                    alt="LinkedIn icon"></a>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <h5>Featured project</h5>
+                        <h4>Portfolio</h4>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                                ut
+                                labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi
+                                ut
+                                aliquip ex
+                                ea commodo consequat.</p>
+                        </div>
+                        <div>
+                            <p>Java TypeScript PostgreSQL GitHub-Actions Kubernetes</p>
+                        </div>
+                        <div>
+                            <a href="" target="_blank"><img src="" alt=""></a>
+                            <a href="" target="_blank"><img src="" alt=""></a>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="img-512" src="/img/projects/spotify.png" alt="Spotify featured project">
+                    </div>
+                </article>
+            </div>
+            <div>
+                <button>OTHER PROJECTS</button>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h2>Let's Get In Touch</h2>
+                <div></div>
+            </header>
+            <span>Message me on mailbox</span>
+            <form>
+                <label for="nameInput">Name</label>
+                <input id="nameInput" name="contact" type="text" placeholder="Your name">
+
+                <label for="emailInput">Email</label>
+                <input id="emailInput" name="contact" type="email" placeholder="Your email address">
+
+                <label for="messageInput">Message</label>
+                <textarea id="messageInput" placeholder="Leave a message here"></textarea>
+                <input type="submit">
+            </form>
+            <span>or text me directly</span>
+            <div>
+                <img src="/img/linkedin-icon.svg" alt="LinkedIn icon">
+            </div>
+        </section>
+
+        <footer>
+            <span>Designed in <strong>Figma</strong> & coded with <strong>WebStorm</strong> by Emil Stryszawski</span>
+        </footer>
+    </main>
     <div></div>
-  </header>
-  <article>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </article>
-  <div>
-    <div>
-      <ul>
-        <li><img src="/img/spring-boot-icon.svg" alt="Spring Boot icon">Spring Boot</li>
-        <li><img src="/img/java-icon.svg" alt="Java icon">Java</li>
-        <li><img src="/img/angular-icon.svg" alt="Angular icon">Angular</li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <li><img src="/img/html-icon.svg" alt="HTML icon">HTML</li>
-        <li><img src="/img/css-icon.svg" alt="CSS icon">CSS</li>
-        <li><img src="/img/javascript-icon.svg" alt="JavaScript icon">JavaScript</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section>
-  <header>
-    <h3>Where I've worked</h3>
-    <div></div>
-  </header>
-  <div>
-    <fieldset id="jobs">
-      <legend></legend>
-      <div>
-        <label for="bec">BEC</label>
-        <input name="company" id="bec" type="radio" value="bec" checked onclick="showJobDescription()">
-      </div>
-      <div>
-        <label for="neoSmart">NeoSmart</label>
-        <input name="company" id="neoSmart" type="radio" value="neoSmart" onclick="showJobDescription()">
-      </div>
-    </fieldset>
-    <div>
-      <h3 id="jobTitle"></h3>
-      <span id="jobTimeSpan"></span>
-      <p id="jobDescription"></p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <header>
-    <h3>What I've done</h3>
-    <div></div>
-  </header>
-  <div>
-    <article>
-      <div>
-        <img src="/img/projects/spotify.png" alt="Spotify featured project">
-      </div>
-      <div>
-        <h5>Featured project</h5>
-        <h4>Portfolio</h4>
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-        <div>
-          <p>Java TypeScript PostgreSQL GitHub-Actions Kubernetes</p>
-        </div>
-        <div>
-          <a href="https://github.com/emstryszawski/repositories" target="_blank"><img src="/img/github-icon.svg"
-                                                                                       alt="GitHub icon"></a>
-          <a href="https://www.linkedin.com/in/emil-stryszawski/" target="_blank"><img src="/img/linkedin-icon.svg"
-                                                                                       alt="LinkedIn icon"></a>
-        </div>
-      </div>
-    </article>
-    <article>
-      <div>
-        <h5>Featured project</h5>
-        <h4>Portfolio</h4>
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-        <div>
-          <p>Java TypeScript PostgreSQL GitHub-Actions Kubernetes</p>
-        </div>
-        <div>
-          <a href="" target="_blank"><img src="" alt=""></a>
-          <a href="" target="_blank"><img src="" alt=""></a>
-        </div>
-      </div>
-      <div>
-        <img src="/img/projects/spotify.png" alt="Spotify featured project">
-      </div>
-    </article>
-  </div>
-  <div>
-    <button>OTHER PROJECTS</button>
-  </div>
-</section>
-
-<section>
-  <header>
-    <h2>Let's Get In Touch</h2>
-    <div></div>
-  </header>
-  <span>Message me on mailbox</span>
-  <form>
-    <label for="nameInput">Name</label>
-    <input id="nameInput" name="contact" type="text" placeholder="Your name">
-
-    <label for="emailInput">Email</label>
-    <input id="emailInput" name="contact" type="email" placeholder="Your email address">
-
-    <label for="messageInput">Message</label>
-    <textarea id="messageInput" placeholder="Leave a message here"></textarea>
-    <input type="submit">
-  </form>
-  <span>or text me directly</span>
-  <div>
-    <img src="/img/linkedin-icon.svg" alt="LinkedIn icon">
-  </div>
-</section>
-
-<footer>
-  <span>Designed in <strong>Figma</strong> & coded with <strong>WebStorm</strong> by Emil Stryszawski</span>
-</footer>
+</div>
 
 </body>
 

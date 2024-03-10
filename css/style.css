@@ -1,142 +1,264 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
+==========================================================================
    Base styles: opinionated defaults
-   ========================================================================== */
-
+==========================================================================
+*/
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+    scroll-behavior: smooth;
 }
 
 * {
-  background-color: #0B2B40;
-  color: white;
+    background-color: #0B2B40;
+    color: white;
 
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .accent {
-  color: #89D99D;
+    color: #89D99D;
 }
 
 .raleway-accent {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .img-64 {
-  max-width: 64px;
+    max-width: 64px;
+}
+
+.img-512 {
+    max-width: 512px;
+}
+
+.img-accent-border {
+    border-style: solid;
+    border-radius: 100%;
+    border-color: #89D99D;
+    color: #89D99D;
+    box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
+    position: relative;
+}
+
+.img-accent-border:active {
+    box-shadow: 0 0 0 0;
+    top: 5px;
+    left: 5px;
 }
 
 .resume-button {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #89D99D;
-  cursor: pointer;
-  border: 3px solid;
-  padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #89D99D;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .resume-button:active {
-  box-shadow: 0 0 0 0;
-  top: 5px;
-  left: 5px;
+    box-shadow: 0 0 0 0;
+    top: 5px;
+    left: 5px;
 }
 
 @media (min-width: 768px) {
-  .resume-button {
-    padding: 0.25em 0.75em;
-  }
+    .resume-button {
+        padding: 0.25em 0.75em;
+    }
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.sticky-2 {
+    position: sticky;
+    bottom: 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex.stretched {
+    justify-content: space-evenly;
+}
+
+.flex.center {
+    align-items: center;
+}
+
+.flex.end {
+    justify-content: flex-end;
 }
 
 .flex-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-row.center {
+    align-items: center;
+}
+
+.flex-row.end {
+    align-items: flex-end;
 }
 
 .flex-row.stretched {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
-header {
-  margin: 0 20px 20px 20px;
+.flex-row.justified {
+    justify-content: space-between;
 }
 
-nav {
-  margin: 0 40px 0 40px;
+.p-rl-1 {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.p-tb-1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.p-tb-2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.m-1 {
+    margin: 10px;
 }
 
 nav li {
-  margin: 0 20px 0 20px;
+    margin: 0 20px 0 20px;
 }
 
-li {
-  color: #89D99D;
-  list-style-type: upper-roman;
+.linked-icon:active {
+    box-shadow: 0 0 0 0;
+    top: 5px;
+    left: 5px;
 }
 
-li a {
-  text-decoration: none;
-  font-weight: 400;
+.linked-icon {
+    color: #89D99D;
+    border-style: solid;
+    border-color: #89D99D;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0 0, 2px 2px 0 0, 3px 3px 0 0, 4px 4px 0 0, 5px 5px 0 0;
 }
 
-li a:hover {
-  color: #89D99D;
-  font-weight: 500;
+nav li {
+    color: #89D99D;
+    list-style-type: upper-roman;
+}
+
+nav li a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+nav li a:hover {
+    color: #89D99D;
+    font-weight: 500;
+}
+
+.vertical-separator {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    height: 10vh;
+}
+
+.horizontal-separator {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+div.horizontal {
+    flex-grow: 1;
+    margin-left: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+#welcome h3 {
+    padding-left: 3px;
+}
+
+#welcome h1 {
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 72px;
+    font-weight: 700;
+}
+
+#welcome h2 {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+section {
+    padding-top: 60px;
+    height: 100vh;
+    width: 66vw;
+}
+
+section h3 {
+    font-size: 28px;
+}
+
+.vh-70 {
+    height: 70vh;
+}
+
+#welcome {
+    /*margin-top: 100px;*/
+    margin-top: 15%;
+}
+
+#welcome p {
+    width: 50vw;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#welcome a {
+    color: #89D99D;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
+    ABOUT ME SECTION
+*/
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+article#resume {
+    padding-top: 20px;
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+article#resume h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
 }
 
 /*
@@ -151,7 +273,7 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 /*
@@ -159,9 +281,9 @@ video {
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -169,7 +291,7 @@ fieldset {
  */
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
 
 /* ==========================================================================
@@ -186,7 +308,7 @@ textarea {
 
 .hidden,
 [hidden] {
-  display: none !important;
+    display: none !important;
 }
 
 /*
@@ -199,16 +321,16 @@ textarea {
  */
 
 .visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
 }
 
 /*
@@ -219,13 +341,13 @@ textarea {
 
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
 }
 
 /*
@@ -233,7 +355,7 @@ textarea {
  */
 
 .invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 /*
@@ -245,12 +367,12 @@ textarea {
 
 .clearfix::before,
 .clearfix::after {
-  content: "";
-  display: table;
+    content: "";
+    display: table;
 }
 
 .clearfix::after {
-  clear: both;
+    clear: both;
 }
 
 /* ==========================================================================
@@ -260,14 +382,14 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 1.25dppx),
 (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -277,63 +399,63 @@ textarea {
    ========================================================================== */
 
 @media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
 
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+    pre {
+        white-space: pre-wrap !important;
+    }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
 
