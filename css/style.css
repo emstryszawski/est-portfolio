@@ -147,6 +147,14 @@ li {
     justify-content: space-around;
 }
 
+.p-r-1 {
+    padding-right: 40px;
+}
+
+.p-b-1 {
+    padding-bottom: 40px;
+}
+
 .p-rl-1 {
     padding-right: 40px;
     padding-left: 40px;
@@ -219,6 +227,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+h4 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 #welcome h3 {
     padding-left: 3px;
 }
@@ -247,6 +263,10 @@ section:not(:first-child) {
 
 section h3 {
     font-size: 28px;
+}
+
+section header {
+    padding-bottom: 40px;
 }
 
 article {
@@ -299,14 +319,40 @@ a {
     padding-inline-start: 0;
 }
 
-article#resume {
-    padding-top: 20px;
-}
-
 article#resume h2 {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 20px;
+}
+
+.radio-box {
+    background-color: #0C3048;
+    border-left: 2px solid white;
+}
+
+.radio-box input[type="radio"] {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.radio-box label {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+    min-width: 20vw;
+    height: 60px;
+    background-color: #0C3048;
+    padding-left: 15px;
+}
+
+.radio-box:has(input[type="radio"]:checked).radio-box, .radio-box:has(input[type="radio"]:checked) label {
+    background-color: #082334;
+    border-left: 1px solid #89D99D;
+}
+
+.radio-box label:hover, .radio-box:hover {
+    background-color: #082334;
 }
 
 /*

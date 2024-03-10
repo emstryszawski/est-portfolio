@@ -34,8 +34,8 @@
         <nav>
             <ul class="flex-row">
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="">EXPERIENCE</a></li>
-                <li><a href="">PROJECTS</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="">CONTACT</a></li>
             </ul>
         </nav>
@@ -116,40 +116,44 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="flex center p-tb-2">
-                    <a href="#experience"><span>Check My Projects</span></a>
-                    <a href="#experience"><img src="/img/double-chevron-down-icon.svg" alt="Scroll down"></a>
-                </div>
+            </div>
+            <div class="flex center p-tb-2">
+                <a href="#experience"><span>My Career</span></a>
+                <a href="#experience"><img src="/img/double-chevron-down-icon.svg" alt="Scroll down"></a>
             </div>
         </section>
 
         <section id="experience">
-            <header>
-                <h3>Where I've worked</h3>
-                <div></div>
+            <header class="flex-row center">
+                <h3><strong class="accent">III.</strong> Where I've worked</h3>
+                <div class="horizontal"></div>
             </header>
-            <div>
-                <fieldset id="jobs">
+            <div class="flex-row wrap">
+                <fieldset id="jobs" class="p-r-1 p-b-1">
                     <legend></legend>
-                    <div>
+                    <div class="radio-box">
                         <label for="bec">BEC</label>
-                        <input name="company" id="bec" type="radio" value="bec" checked onclick="showJobDescription()">
+                        <input name="company" id="bec" type="radio" value="bec" checked onclick="showJob('bec')">
                     </div>
-                    <div>
+                    <div class="radio-box">
                         <label for="neoSmart">NeoSmart</label>
                         <input name="company" id="neoSmart" type="radio" value="neoSmart"
-                               onclick="showJobDescription()">
+                               onclick="showJob('neoSmart')">
                     </div>
                 </fieldset>
-                <div>
+                <div class="flex gap-1">
                     <h3 id="jobTitle"></h3>
-                    <span id="jobTimeSpan"></span>
+                    <h4 id="jobTimeSpan"></h4>
                     <p id="jobDescription"></p>
                 </div>
             </div>
+            <div class="flex center p-tb-2">
+                <a href="#projects"><span>Projects I've Commit</span></a>
+                <a href="#projects"><img src="/img/double-chevron-down-icon.svg" alt="Scroll down"></a>
+            </div>
         </section>
 
-        <section>
+        <section id="projects">
             <header>
                 <h3>What I've done</h3>
                 <div></div>
