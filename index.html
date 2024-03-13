@@ -36,7 +36,7 @@
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#experience">EXPERIENCE</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
         <button class="resume-button">RESUME</button>
@@ -234,30 +234,34 @@
         </section>
 
         <section id="contact">
-            <header>
-                <h2>Let's Get In Touch</h2>
-                <div></div>
+            <header class="flex-row center">
+                <h3><strong class="accent">IV.</strong> Contact</h3>
+                <div class="horizontal"></div>
             </header>
-            <span>Message me on mailbox</span>
-            <form>
-                <label for="nameInput">Name</label>
-                <input id="nameInput" name="contact" type="text" placeholder="Your name">
+            <div class="flex stretched center contact-form">
+                <span class="accent">Message me on mailbox</span>
+                <form class="flex stretched contact-form">
+                    <label for="nameInput">Name</label>
+                    <input id="nameInput" name="contact" type="text" placeholder="Your name" required>
 
-                <label for="emailInput">Email</label>
-                <input id="emailInput" name="contact" type="email" placeholder="Your email address">
+                    <label for="emailInput">Email</label>
+                    <input id="emailInput" name="contact" type="email" placeholder="Your email address" required>
 
-                <label for="messageInput">Message</label>
-                <textarea id="messageInput" placeholder="Leave a message here"></textarea>
-                <input type="submit">
-            </form>
-            <span>or text me directly</span>
-            <div>
-                <img src="/img/linkedin-icon.svg" alt="LinkedIn icon">
+                    <label for="messageInput">Message</label>
+                    <textarea id="messageInput" placeholder="Leave a message here" required minlength="1"
+                              maxlength="2000"></textarea>
+                    <input type="submit" value="SEND">
+                </form>
+                <span>or text me directly</span>
+                <a class="m-1" href="https://www.linkedin.com/in/emil-stryszawski/" target="_blank">
+                    <img src="/img/linkedin-icon.svg" alt="LinkedIn icon">
+                </a>
             </div>
         </section>
 
-        <footer>
-            <span>Designed in <strong>Figma</strong> & coded with <strong>WebStorm</strong> by Emil Stryszawski</span>
+        <footer class="flex center p-tb-1">
+            <span>Designed in <strong class="accent">Figma</strong> & coded with <strong
+                    class="accent">WebStorm</strong> by Emil Stryszawski</span>
         </footer>
     </main>
     <div></div>

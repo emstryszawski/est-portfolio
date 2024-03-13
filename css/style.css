@@ -443,6 +443,59 @@ article#resume h2 {
     justify-content: space-between;
 }
 
+.contact-form form {
+    width: 50%;
+}
+
+.contact-form input, textarea {
+    background-color: #082334;
+    margin: 10px 0 10px 0;
+    min-height: 44px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 4px;
+    padding-inline: 0 0;
+}
+
+.contact-form input[type='text'], .contact-form input[type='email'], .contact-form textarea {
+    padding-left: 10px;
+}
+
+.contact-form textarea {
+    padding-top: 10px;
+}
+
+.contact-form input:focus, textarea:focus {
+    border: 1px solid #89D99D;
+    transition: 0.5s;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 20vh;
+}
+
+.contact-form label {
+    margin: 10px 0 0 0;
+}
+
+.contact-form input[type='submit'] {
+    background-color: #89D99D;
+    color: #0C3048;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+.contact-form input[type='submit']:hover {
+    transform: scale(0.95);
+    background-color: #082334;
+    color: #89D99D;
+    cursor: pointer;
+}
+
+#contact span {
+    color: rgba(255, 255, 255, 0.7);
+}
 
 
 /*
