@@ -8,13 +8,16 @@ html {
 }
 
 * {
-    background-color: #0B2B40;
     color: white;
 
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+body {
+    background-color: #0B2B40;
 }
 
 .accent {
@@ -61,6 +64,7 @@ li {
     text-decoration: none;
     text-transform: uppercase;
     color: #89D99D;
+    background-color: #0C3048;
     cursor: pointer;
     border: 1px solid;
     padding: 0.25em 0.5em;
@@ -100,6 +104,14 @@ li {
 
 .flex.gap-1 {
     row-gap: 1.5em;
+}
+
+.flex.gap-100 {
+    row-gap: 100px;
+}
+
+.flex-row.gap-100 {
+    column-gap: 100px;
 }
 
 .flex-row.gap-1 {
@@ -147,6 +159,10 @@ li {
     justify-content: space-around;
 }
 
+.align-right {
+    align-self: end;
+}
+
 .p-r-1 {
     padding-right: 40px;
 }
@@ -158,6 +174,11 @@ li {
 .p-rl-1 {
     padding-right: 40px;
     padding-left: 40px;
+}
+
+.p-rl-3 {
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .p-tb-1 {
@@ -172,6 +193,10 @@ li {
 
 .m-1 {
     margin: 10px;
+}
+
+.m-4 {
+    margin: 40px;
 }
 
 nav li {
@@ -253,7 +278,7 @@ p {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     width: 66vw;
 }
 
@@ -354,6 +379,71 @@ article#resume h2 {
 .radio-box label:hover, .radio-box:hover {
     background-color: #082334;
 }
+
+#projects article {
+    text-align: right;
+}
+
+#projects h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.overflow-box {
+    position: relative;
+    z-index: 2;
+}
+
+.accent-box p, .accent-box {
+    background-color: #082334;
+    border-radius: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.accent-color-override {
+    background: rgba(137, 217, 157, 0.5);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+.accent-color-override:hover {
+    background: url("/img/projects/spotify.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+.project-image {
+    background: url("/img/projects/spotify.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.grid-image {
+    grid-area: 1 / 1 / 4 / 7;
+}
+
+.grid-content {
+    grid-area: 2 / 12 / 4 / 5;
+}
+
+.grid-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
