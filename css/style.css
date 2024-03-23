@@ -419,7 +419,7 @@ article#resume h2 {
 }
 
 .accent-color-override:hover {
-    background: url("/img/projects/portfolio.png") no-repeat;
+    background: url("img/projects/portfolio.png") no-repeat;
     background-size: cover;
     overflow: hidden;
     height: 100%;
@@ -427,7 +427,7 @@ article#resume h2 {
 }
 
 .project-image {
-    background: url("/img/projects/portfolio.png") no-repeat;
+    background: url("img/projects/portfolio.png") no-repeat;
     background-size: cover;
     overflow: hidden;
     color: #FFFFFF;
