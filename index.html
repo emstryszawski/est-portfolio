@@ -28,6 +28,7 @@
 </head>
 
 <body onload="init()">
+<div id="top"></div>
 <header class="flex-row center stretched p-rl-1 p-tb-1">
     <a href=""><img class="img-64 img-accent-border" src="/img/logo.png" alt="My Bitmoji"></a>
     <div class="flex-row center stretched">
@@ -43,7 +44,7 @@
     </div>
 </header>
 <div class="flex-row stretched end p-rl-1">
-    <aside class="sticky-2">
+    <aside aria-label="socialMediaLinks" class="sticky-2">
         <div class="flex center">
             <a class="resume-button m-1" href="https://github.com/emstryszawski" target="_blank">
                 <img src="/img/github-icon.svg" alt="Github icon">
@@ -264,6 +265,12 @@
                     class="accent">WebStorm</strong> by Emil Stryszawski</span>
         </footer>
     </main>
+    <aside aria-label="scrollTop" class="sticky-2">
+        <div class="flex center">
+            <a href="#top"><img src="/img/double-chevron-up-icon.svg" alt="Scroll to top"></a>
+            <hr class="vertical-separator">
+        </div>
+    </aside>
     <div></div>
 </div>
 
