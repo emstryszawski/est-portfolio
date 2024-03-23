@@ -29,9 +29,9 @@
 
 <body onload="init()">
 <div id="top"></div>
-<header class="flex-row center stretched p-rl-1 p-tb-1">
+<header class="flex-row center-vertically stretched p-rl-1 p-tb-1">
     <a href=""><img class="img-64 img-accent-border" src="/img/logo.png" alt="My Bitmoji"></a>
-    <div class="flex-row center stretched">
+    <div class="flex-row center-vertically stretched">
         <nav>
             <ul class="flex-row">
                 <li><a href="#about">ABOUT</a></li>
@@ -45,7 +45,7 @@
 </header>
 <div class="flex-row stretched end p-rl-1">
     <aside aria-label="socialMediaLinks" class="sticky-2">
-        <div class="flex center">
+        <div class="flex center-horizontally">
             <a class="resume-button m-1" href="https://github.com/emstryszawski" target="_blank">
                 <img src="/img/github-icon.svg" alt="Github icon">
             </a>
@@ -66,42 +66,35 @@
                             href="">BEC</a></strong>.
                 </p>
             </div>
-            <div class="flex center p-tb-2">
+            <div class="flex center-horizontally p-tb-2">
                 <a href="#about"><span>Get To Know Me</span></a>
                 <a href="#about"><img src="/img/double-chevron-down-icon.svg" alt="Scroll down"></a>
             </div>
         </section>
 
         <section id="about">
-            <header class="flex-row center">
+            <header class="flex-row center-vertically">
                 <h3><strong class="accent">I.</strong> About Me</h3>
                 <div class="horizontal"></div>
             </header>
             <div class="flex">
                 <article id="resume">
                     <h2>So, who am I?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex
-                        ea
-                        commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat
-                        nulla
-                        pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                        id
-                        est
-                        laborum.</p>
+                    <p>Software sorcerer with a wizardry of over 2 years in the enchanted realm of
+                        the financial sector! Armed with a Bachelor's degree in Computer Science, I embark on coding
+                        quests with the finesse of a design virtuoso and an architectural aficionado. My spellbook
+                        boasts incantations in Java and Spring Boot, summoning databases like PostgreSQL and MSSQL with
+                        a flick of the wrist. For enchanting user interfaces, I wield the pure magic of HTML, CSS, and
+                        JavaScript, all bound together by the mystical Angular framework. But wait, the journey isn't
+                        complete without the trials of testing! With AssertJ and JUnit5, I ensure the integrity of my
+                        Java creations, while Jasmine and Karma stand guard over my Angular sorcery. Join me as we
+                        traverse the digital realms, crafting software adventures with flair and finesse!.</p>
                 </article>
                 <ul class="flex-row around">
                     <li>
                         <ul class="flex gap-1">
-                            <li><img src="/img/spring-boot-icon.svg" alt="Spring Boot icon">Spring Boot</li>
-                            <li><img src="/img/java-icon.svg" alt="Java icon">Java</li>
+                            <li><img src="img/spring-boot-icon.svg" alt="Spring Boot icon">Spring Boot</li>
+                            <li><img src="img/java-icon.svg" alt="Java icon">Java</li>
                         </ul>
                     </li>
                     <li>
@@ -118,14 +111,14 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex center p-tb-2">
+            <div class="flex center-horizontally p-tb-2">
                 <a href="#experience"><span>My Career</span></a>
                 <a href="#experience"><img src="/img/double-chevron-down-icon.svg" alt="Scroll down"></a>
             </div>
         </section>
 
         <section id="experience">
-            <header class="flex-row center">
+            <header class="flex-row center-vertically">
                 <h3><strong class="accent">II.</strong> Where I've worked</h3>
                 <div class="horizontal"></div>
             </header>
@@ -148,18 +141,18 @@
                     <p id="jobDescription"></p>
                 </div>
             </div>
-            <div class="flex center p-tb-2">
+            <div class="flex center-horizontally p-tb-2">
                 <a href="#projects"><span>Projects I've Commit</span></a>
                 <a href="#projects"><img src="/img/double-chevron-down-icon.svg" alt="Scroll down"></a>
             </div>
         </section>
 
         <section id="projects">
-            <header class="flex-row center">
+            <header class="flex-row center-vertically">
                 <h3><strong class="accent">III.</strong> What I've done</h3>
                 <div class="horizontal"></div>
             </header>
-            <div class="flex stretched center gap-100">
+            <div class="flex stretched center-vertically gap-100">
                 <article class="grid">
                     <div class="grid-content">
                         <h5 class="accent">Featured project</h5>
@@ -175,13 +168,13 @@
                                 ea commodo consequat.</p>
                         </div>
                         <div class="overflow-box">
-                            <p>Java TypeScript PostgreSQL GitHub-Actions Kubernetes</p>
+                            <p>HTML CSS JavaScript</p>
                         </div>
                         <div>
-                            <a href="https://github.com/emstryszawski/repositories" target="_blank"><img
+                            <a href="https://github.com/emstryszawski/est-portfolio" target="_blank"><img
                                     src="/img/github-icon.svg"
                                     alt="GitHub icon"></a>
-                            <a href="https://www.linkedin.com/in/emil-stryszawski/" target="_blank"><img
+                            <a class="hidden" href="https://www.linkedin.com/in/emil-stryszawski/" target="_blank"><img
                                     src="/img/linkedin-icon.svg"
                                     alt="LinkedIn icon"></a>
                         </div>
@@ -193,41 +186,8 @@
                         </a>
                     </div>
                 </article>
-                <article class="grid">
-                    <div class="grid-content">
-                        <h5 class="accent">Featured project</h5>
-                        <h3>Portfolio</h3>
-                        <div class="accent-box overflow-box p-rl-3">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-                                ut
-                                labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi
-                                ut
-                                aliquip ex
-                                ea commodo consequat.</p>
-                        </div>
-                        <div class="overflow-box">
-                            <p>Java TypeScript PostgreSQL GitHub-Actions Kubernetes</p>
-                        </div>
-                        <div>
-                            <a href="https://github.com/emstryszawski/repositories" target="_blank"><img
-                                    src="/img/github-icon.svg"
-                                    alt="GitHub icon"></a>
-                            <a href="https://www.linkedin.com/in/emil-stryszawski/" target="_blank"><img
-                                    src="/img/linkedin-icon.svg"
-                                    alt="LinkedIn icon"></a>
-                        </div>
-
-                    </div>
-                    <div class="grid-image project-image">
-                        <a href="">
-                            <div class="accent-color-override"></div>
-                        </a>
-                    </div>
-                </article>
-                <button class="resume-button align-right">OTHER PROJECTS</button>
-                <div class="flex center p-tb-2">
+                <button class="resume-button align-right hidden">OTHER PROJECTS</button>
+                <div class="flex center-horizontally p-tb-2">
                     <a href="#contact"><span>Let's Get In Touch</span></a>
                     <a href="#contact"><img src="/img/double-chevron-down-icon.svg" alt="Scroll down"></a>
                 </div>
@@ -235,11 +195,11 @@
         </section>
 
         <section id="contact">
-            <header class="flex-row center">
+            <header class="flex-row center-vertically">
                 <h3><strong class="accent">IV.</strong> Contact</h3>
                 <div class="horizontal"></div>
             </header>
-            <div class="flex stretched center contact-form">
+            <div class="flex stretched center-horizontally contact-form">
                 <span class="accent">Message me on mailbox</span>
                 <form class="flex stretched contact-form">
                     <label for="nameInput">Name</label>
@@ -260,18 +220,17 @@
             </div>
         </section>
 
-        <footer class="flex center p-tb-1">
+        <footer class="flex center-horizontally p-tb-1">
             <span>Designed in <strong class="accent">Figma</strong> & coded with <strong
                     class="accent">WebStorm</strong> by Emil Stryszawski</span>
         </footer>
     </main>
     <aside aria-label="scrollTop" class="sticky-2">
-        <div class="flex center">
+        <div class="flex center-horizontally">
             <a href="#top"><img src="/img/double-chevron-up-icon.svg" alt="Scroll to top"></a>
             <hr class="vertical-separator">
         </div>
     </aside>
-    <div></div>
 </div>
 
 </body>

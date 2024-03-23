@@ -126,7 +126,7 @@ li {
     justify-content: space-evenly;
 }
 
-.flex.center {
+.flex.center-horizontally {
     align-items: center;
 }
 
@@ -143,8 +143,12 @@ li {
     flex-wrap: wrap;
 }
 
-.flex-row.center {
+.flex-row.center-vertically {
     align-items: center;
+}
+
+.flex-row.center-horizontally {
+    justify-content: center;
 }
 
 .flex-row.end {
@@ -277,9 +281,13 @@ p {
     font-weight: 700;
 }
 
-section {
+section:not(:last-of-type) {
     min-height: 100vh;
-    width: 66vw;
+    max-width: 1125px;
+}
+
+section:last-of-type {
+    height: 80vh;
 }
 
 section:not(:first-child) {
@@ -313,12 +321,10 @@ article p {
 }
 
 #welcome {
-    /*margin-top: 100px;*/
     margin-top: 15%;
 }
 
 #welcome p {
-    width: 50vw;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -413,7 +419,7 @@ article#resume h2 {
 }
 
 .accent-color-override:hover {
-    background: url("/img/projects/spotify.png") no-repeat;
+    background: url("/img/projects/portfolio.png") no-repeat;
     background-size: cover;
     overflow: hidden;
     height: 100%;
@@ -421,20 +427,20 @@ article#resume h2 {
 }
 
 .project-image {
-    background: url("/img/projects/spotify.png") no-repeat;
+    background: url("/img/projects/portfolio.png") no-repeat;
     background-size: cover;
     overflow: hidden;
-    height: 100%;
     color: #FFFFFF;
     border-radius: 5px;
+    height: 300px;
 }
 
 .grid-image {
-    grid-area: 1 / 1 / 4 / 7;
+    grid-area: 1 / 1 / 2 / 7;
 }
 
 .grid-content {
-    grid-area: 2 / 12 / 4 / 5;
+    grid-area: 1 / 12 / 2 / 5;
 }
 
 .grid-content {
