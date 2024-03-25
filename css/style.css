@@ -24,6 +24,18 @@ body {
     color: #89D99D;
 }
 
+.orange {
+    color: orange;
+}
+
+.blue {
+    color: dodgerblue;
+}
+
+.yellow {
+    color: yellow;
+}
+
 .raleway-accent {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -199,6 +211,10 @@ li {
     margin: 10px;
 }
 
+.m-3 {
+    margin: 30px;
+}
+
 .m-4 {
     margin: 40px;
 }
@@ -261,7 +277,13 @@ h4 {
 }
 
 p {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+strong {
+    font-weight: 500;
 }
 
 #welcome h3 {
@@ -284,6 +306,7 @@ p {
 section:not(:last-of-type) {
     min-height: 100vh;
     max-width: 1125px;
+    width: 60vw;
 }
 
 section:last-of-type {
@@ -335,15 +358,6 @@ a {
 
 #welcome a {
     color: #89D99D;
-}
-
-
-/*
-    ABOUT ME SECTION
-*/
-
-#about {
-
 }
 
 #about ul {
@@ -403,6 +417,10 @@ article#resume h2 {
 .accent-box p, .accent-box {
     background-color: #082334;
     border-radius: 5px;
+}
+
+.large-font {
+    font-size: large;
 }
 
 .grid {
@@ -498,11 +516,6 @@ article#resume h2 {
     color: #89D99D;
     cursor: pointer;
 }
-
-#contact span {
-    color: rgba(255, 255, 255, 0.7);
-}
-
 
 /*
  * Remove the gap between audio, canvas, iframes,

@@ -40,7 +40,9 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
-        <a href="resources/cv.pdf" target="_blank"><button class="resume-button">RESUME</button></a>
+        <a href="resources/cv.pdf" target="_blank">
+            <button class="resume-button">RESUME</button>
+        </a>
     </div>
 </header>
 <div class="flex-row stretched end p-rl-1">
@@ -78,17 +80,25 @@
                 <div class="horizontal"></div>
             </header>
             <div class="flex">
-                <article id="resume">
+                <article>
                     <h2>So, who am I?</h2>
-                    <p>Software sorcerer with a wizardry of over 2 years in the enchanted realm of
-                        the financial sector! Armed with a Bachelor's degree in Computer Science, I embark on coding
-                        quests with the finesse of a design virtuoso and an architectural aficionado. My spellbook
-                        boasts incantations in Java and Spring Boot, summoning databases like PostgreSQL and MSSQL with
-                        a flick of the wrist. For enchanting user interfaces, I wield the pure magic of HTML, CSS, and
-                        JavaScript, all bound together by the mystical Angular framework. But wait, the journey isn't
-                        complete without the trials of testing! With AssertJ and JUnit5, I ensure the integrity of my
-                        Java creations, while Jasmine and Karma stand guard over my Angular sorcery. Join me as we
-                        traverse the digital realms, crafting software adventures with flair and finesse!.</p>
+                    <p>Introducing myself, a software engineer 🚀 with <strong>over 2 years</strong> of experience in the
+                        financial
+                        sector! Armed with a Bachelor's degree in <span class="accent">Computer Science</span> 🎓, I dive
+                        into projects headfirst, focusing on refining design and architecture.
+                    <p>
+                        My expertise lies in <strong>Java</strong> ☕ and <strong>Spring Boot</strong> for
+                        backend development, and I'm well-versed in databases like <strong>PostgreSQL</strong> and
+                        <strong>MSSQL</strong>. For creating
+                        user
+                        interfaces, I rely on the classic trio of <span class="orange">HTML</span>, <span class="blue">CSS</span>,
+                        and <span class="yellow">JavaScript</span>,
+                        all bundled up neatly in
+                        the
+                        <strong>Angular</strong> framework. And of course, I make sure my code stands the test of time
+                        with thorough testing using <strong>AssertJ</strong> and <strong>JUnit5</strong> for Java, and
+                        <strong>Jasmine</strong> and <strong>Karma</strong> for Angular.
+                    </p>
                 </article>
                 <ul class="flex-row around">
                     <li>
@@ -110,6 +120,10 @@
                         </ul>
                     </li>
                 </ul>
+                <p>But when I'm not busy coding, you can find me cuddling up with my furry friends 🐶🐱! I'm also a
+                    gym rat 🏋️‍♂️, hitting the gym 4 times a week to stay in shape. And if cars are your thing 🏎️, I'm
+                    your guy, though you might want to think twice before challenging me to a race 🏁!
+                </p>
             </div>
             <div class="flex center-horizontally p-tb-2">
                 <a href="#experience"><span>My Career</span></a>
@@ -155,7 +169,7 @@
             <div class="flex stretched center-vertically gap-100">
                 <article class="grid">
                     <div class="grid-content">
-                        <h5 class="accent">Featured project</h5>
+                        <h5 class="accent large-font">Featured project</h5>
                         <h3>Portfolio</h3>
                         <div class="accent-box overflow-box p-rl-3">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
@@ -199,30 +213,24 @@
                 <h3><strong class="accent">IV.</strong> Contact</h3>
                 <div class="horizontal"></div>
             </header>
-            <div class="flex stretched center-horizontally contact-form">
-                <span class="accent">Message me on mailbox</span>
-                <form class="flex stretched contact-form">
-                    <label for="nameInput">Name</label>
-                    <input id="nameInput" name="contact" type="text" placeholder="Your name" required>
-
-                    <label for="emailInput">Email</label>
-                    <input id="emailInput" name="contact" type="email" placeholder="Your email address" required>
-
-                    <label for="messageInput">Message</label>
-                    <textarea id="messageInput" placeholder="Leave a message here" required minlength="1"
-                              maxlength="2000"></textarea>
-                    <input type="submit" value="SEND">
-                </form>
-                <span>or text me directly</span>
-                <a class="m-1" href="https://www.linkedin.com/in/emil-stryszawski/" target="_blank">
-                    <img src="img/linkedin-icon.svg" alt="LinkedIn icon">
+            <div class="flex stretched center-horizontally">
+                <p class="accent large-font">So, that's it :)</p>
+                <p>Hope you liked what you have seen, I'd love to hear your <span class="accent">feedback!.</span></p>
+                <p>Don't hesitate to send me a message</p>
+                <a class="resume-button p-tb-1 m-3" href="mailto:stryszawskiemil@gmail.com">SEND EMAIL</a>
+                <a href="https://www.linkedin.com/in/emil-stryszawski/" target="_blank">
+                    <div class="flex-row m-3">
+                        <p>or text me directly on <span class="accent">social media</span></p>
+                        <img class="m-1" src="img/linkedin-icon.svg" alt="LinkedIn icon">
+                    </div>
                 </a>
             </div>
         </section>
 
-        <footer class="flex center-horizontally p-tb-1">
-            <span>Designed in <strong class="accent">Figma</strong> & coded with <strong
-                    class="accent">WebStorm</strong> by Emil Stryszawski</span>
+        <footer class="flex center-horizontally">
+            <p>Designed in <a href="https://figma.com" class="accent">Figma</a> & coded with <a
+                    href="https://www.jetbrains.com/webstorm/"
+                    class="accent">WebStorm</a> by <span>Emil Stryszawski</span></p>
         </footer>
     </main>
     <aside aria-label="scrollTop" class="sticky-2">
