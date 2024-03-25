@@ -438,7 +438,7 @@ article#resume h2 {
 }
 
 .accent-color-override:hover {
-    background: url("img/projects/portfolio.png") no-repeat;
+    background: url("../img/projects/portfolio.png") no-repeat;
     background-size: cover;
     overflow: hidden;
     height: 100%;
@@ -446,7 +446,7 @@ article#resume h2 {
 }
 
 .project-image {
-    background: url("/img/projects/portfolio.png") no-repeat;
+    background: url("../img/projects/portfolio.png") no-repeat;
     background-size: cover;
     overflow: hidden;
     color: #FFFFFF;
@@ -460,12 +460,13 @@ article#resume h2 {
 
 .grid-content {
     grid-area: 1 / 12 / 2 / 5;
-}
-
-.grid-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.grid-content * {
+    text-align: end;
 }
 
 .contact-form form {
