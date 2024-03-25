@@ -1,5 +1,9 @@
 {
   "title": "Internship",
   "timeSpan": "July 2021 - September 2021",
-  "description": "Doing internship at NeoSmart for my Bachelor's degree."
+  "tasks": [
+    "Query complex SQL views for business clients using integrated ERP system",
+    "Developed an SQL procedure to accurately calculate employee seniority across various contracts within the company, ensuring full compliance with Polish labour law regulations ",
+    "Developed an SQL procedure to automate the tally of available products in the warehouse, dynamically adjusting their values based on the specific customer profile, enhancing inventory management and customer-specific pricing accuracy"
+  ]
 }

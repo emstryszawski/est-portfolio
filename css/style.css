@@ -373,6 +373,7 @@ article#resume h2 {
 .radio-box {
     background-color: #0C3048;
     border-left: 2px solid white;
+    max-height: 60px;
 }
 
 .radio-box input[type="radio"] {
@@ -445,7 +446,7 @@ article#resume h2 {
 }
 
 .project-image {
-    background: url("img/projects/portfolio.png") no-repeat;
+    background: url("/img/projects/portfolio.png") no-repeat;
     background-size: cover;
     overflow: hidden;
     color: #FFFFFF;
@@ -515,6 +516,31 @@ article#resume h2 {
     background-color: #082334;
     color: #89D99D;
     cursor: pointer;
+}
+
+#tasks {
+    list-style-type: armenian;
+}
+
+#tasks li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 20px;
+
+    margin: 10px 0 0 0;
+
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#tasks {
+    padding-inline-start: 0;
+}
+
+#tasks li::marker {
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 900;
+    color: #89D99D;
+    content: "\f054";
 }
 
 /*

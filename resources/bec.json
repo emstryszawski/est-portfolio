@@ -1,5 +1,11 @@
 {
   "title": "Junior Software Engineer",
   "timeSpan": "2022 Feb - Present",
-  "description": "I started working at BEC in February 2022"
+  "tasks" : [
+    "Built and delivered feature for valuating real estates as a leading developer",
+    "Refactored existing microservices which scaled up code coverage and highly reduced amount of bugs",
+    "Decoupled business logic from configuration and integration code using DDD",
+    "Delivered multiple user interface features in Angular",
+    "Maintained existing BPMN Camunda processes and its codebases"
+  ]
 }
