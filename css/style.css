@@ -465,8 +465,12 @@ article#resume h2 {
     justify-content: space-between;
 }
 
-.grid-content h1, h2, h3, h4, h5, h6, span {
+.grid-content * {
     text-align: end;
+}
+
+.grid-content p {
+    text-align: justify;
 }
 
 .contact-form form {
